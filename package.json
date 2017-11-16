@@ -33,6 +33,7 @@
   "dependencies": {
     "animated": "^0.2.0",
     "react": "^15.6.1",
+    "react-anime": "^2.0.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "next",
     "react-router-dom": "^4.1.1",

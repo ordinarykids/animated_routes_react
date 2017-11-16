@@ -6,6 +6,10 @@ import { firstChild } from "../utils/helpers";
 
 import TopBar from "./top_bar";
 import Home from "./home";
+import Slide2 from "./slide2";
+import Matter from "./matter";
+
+
 import Projects from "./projects";
 import ProjectItem from "./project_item";
 import Missed from "./missed";
@@ -17,17 +21,7 @@ export default class App extends Component {
 			projects: []
 		};
 	}
-	componentDidMount() {
-		fetch("https://jsonplaceholder.typicode.com/posts")
-			.then(response => {
-				return response.json();
-			})
-			.then(json => {
-				this.setState({
-					projects: json.slice(0, 7)
-				});
-			});
-	}
+	
 	render() {
 		return (
 			<div className="wrapper">
@@ -40,19 +34,11 @@ export default class App extends Component {
 								location={location}
 							>
 								<Route exact path="/" component={Home} />
-								<Route
-									exact
-									path="/projects"
-									render={props => (
-										<Projects {...props} projects={this.state.projects} />
-									)}
-								/>
-								<Route
-									path="/projects/:id"
-									render={props => (
-										<ProjectItem {...props} projects={this.state.projects} />
-									)}
-								/>
+								<Route exact path="/Water-On-Mars" component={Slide2} />
+								<Route exact path="/matter" component={Matter} />
+								<Route exact path="/Water-On-Mars" component={Slide2} />
+								<Route exact path="/Water-On-Mars" component={Slide2} />
+								
 								<Route component={Missed} />
 							</AnimatedSwitch>
 						</TransitionGroup>

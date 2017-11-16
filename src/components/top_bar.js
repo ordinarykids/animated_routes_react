@@ -7,8 +7,11 @@ export default class TopBar extends Component {
 			<div className="top-bar">
 				<nav>
 					<NavLink exact to="/">Home</NavLink>
-					<NavLink to="/projects">Projects</NavLink>
-					<NavLink to="/idontexist">Non-existent route</NavLink>
+					<NavLink to="/Water-On-Mars">(1) Water on Mars</NavLink>
+					<NavLink to="/eris">(2) The Discovery of Eris</NavLink>
+					<NavLink to="/pluto">(3) Pluto’s Mysteries Revealed  </NavLink>
+					<NavLink to="/Planets">(4) Extrasolar Planets – By the Billions</NavLink>
+					<NavLink to="/matter">(5) The Hunt for Dark Matter  </NavLink>
 				</nav>
 			</div>
 		)
